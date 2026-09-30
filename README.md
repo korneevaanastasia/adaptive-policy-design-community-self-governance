@@ -89,9 +89,7 @@ The live prototype contains links to the selected references.
 
 ## Live demo
 
-**GitHub Pages:** `GITHUB_PAGES_URL_PLACEHOLDER`
-
-After deployment, replace this placeholder and set `REPOSITORY_URL` near the top of `assets/js/app.js`.
+**GitHub Pages:** https://korneevaanastasia.github.io/adaptive-policy-design-community-self-governance/
 
 ## Repository structure
 
@@ -130,7 +128,7 @@ A related academic manuscript on adaptive regional support for territorial publi
 
 Suggested citation:
 
-> Korneeva, Anastasia. 2026. *Adaptive Policy Design for Community Self-Governance: An Interactive Research Prototype*. Version 1.1. `REPOSITORY_URL_PLACEHOLDER`
+> Korneeva, Anastasia. 2026. *Adaptive Policy Design for Community Self-Governance: An Interactive Research Prototype*. Version 1.1. https://github.com/korneevaanastasia/adaptive-policy-design-community-self-governance
 
 See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
