@@ -62,7 +62,7 @@ en:{
   "about.manuscript":"A related academic manuscript on adaptive regional support for territorial public self-government is currently in preparation with Elena B. Zyuzina, Voronezh State University.",
   "about.version":"Version 1.1 — 2026",
   "citation.title":"How to cite",
-"citation.intro":"Suggested citation for the public prototype."
+"citation.intro":"Suggested citation for the public prototype.",
   "citation.copy":"Copy citation",
   "footer":"Independent academic research prototype. Public version curated from a larger academic policy-design model."
 },
@@ -129,7 +129,7 @@ ru:{
   "about.manuscript":"Связанная академическая статья об адаптивной региональной поддержке территориального общественного самоуправления в настоящее время готовится совместно с Еленой Б. Зюзиной, Воронежский государственный университет.",
   "about.version":"Версия 1.1 — 2026",
   "citation.title":"Как цитировать",
-"citation.intro":"Рекомендуемая ссылка на публичный прототип."
+"citation.intro":"Рекомендуемая ссылка на публичный прототип.",
     "citation.copy":"Скопировать ссылку",
   "footer":"Независимый академический исследовательский прототип. Публичная версия подготовлена на основе более подробной академической модели проектирования политики."
 }
