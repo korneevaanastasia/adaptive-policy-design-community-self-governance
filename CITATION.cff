@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or refer to this research prototype, please cite it using the metadata below."
+title: "Adaptive Policy Design for Community Self-Governance: An Interactive Research Prototype"
+type: software
+authors:
+  - family-names: "Korneeva"
+    given-names: "Anastasia"
+version: "1.1"
+date-released: "2026-09-30"
+abstract: >-
+  An interactive academic policy-design prototype exploring proportionate
+  intervention design under heterogeneous starting conditions and incomplete
+  evidence, using territorial public self-government in the Voronezh Region
+  as an illustrative case application.
+keywords:
+  - adaptive governance
+  - public policy
+  - community self-governance
+  - citizen participation
+  - decision-making under uncertainty
+  - institutional design
+license: "NOASSERTION"

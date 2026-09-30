@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adaptive Policy Design for Community Self-Governance</title>
+<meta name="description" content="An interactive academic policy-design prototype for adaptive decision-making under heterogeneous starting conditions and incomplete evidence." />
+<meta property="og:title" content="Adaptive Policy Design for Community Self-Governance: An Interactive Research Prototype" />
+<meta property="og:description" content="An interactive academic policy-design prototype for proportional interventions, safeguards, and adaptive review under incomplete evidence." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Adaptive Policy Design for Community Self-Governance" />
+<meta name="twitter:description" content="Interactive research prototype for adaptive policy design under heterogeneous starting conditions and incomplete evidence." />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand">Adaptive Policy Design</div>
+    <div class="lang-switch" aria-label="Language">
+      <button id="enBtn" class="active" type="button">EN</button>
+      <button id="ruBtn" type="button">RU</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="kicker" data-i18n="hero.kicker"></div>
+    <h1 data-i18n="hero.title"></h1>
+    <div class="subtitle" data-i18n="hero.proposition"></div>
+    <div class="case" data-i18n="hero.case"></div>
+    <div class="definition" data-i18n-html="hero.tos"></div>
+    <div class="disclaimer">
+      <strong data-i18n="disclaimer.title"></strong>
+      <div data-i18n-html="disclaimer.body"></div>
+    </div>
+  </header>
+
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a href="#problem" data-i18n="nav.problem"></a>
+      <a href="#logic" data-i18n="nav.logic"></a>
+      <a href="#profiles" data-i18n="nav.profiles"></a>
+      <a href="#safeguards" data-i18n="nav.safeguards"></a>
+      <a href="#review" data-i18n="nav.review"></a>
+      <a href="#methodology" data-i18n="nav.methodology"></a>
+      <a href="#foundations" data-i18n="nav.foundations"></a>
+      <a href="#limitations" data-i18n="nav.limitations"></a>
+    </nav>
+  </div>
+
+  <section id="problem" class="panel">
+    <div class="section-head">
+      <div>
+        <div class="section-title" data-i18n="problem.title"></div>
+        <div class="section-sub" data-i18n="problem.intro"></div>
+      </div>
+    </div>
+    <div class="symptom" data-i18n="problem.symptom"></div>
+    <div class="compare">
+      <div class="card">
+        <h3 data-i18n="problem.caseA.title"></h3>
+        <p data-i18n="problem.caseA.body"></p>
+        <div class="bigline" data-i18n="problem.caseA.action"></div>
+      </div>
+      <div class="compare-mid">≠</div>
+      <div class="card">
+        <h3 data-i18n="problem.caseB.title"></h3>
+        <p data-i18n="problem.caseB.body"></p>
+        <div class="bigline" data-i18n="problem.caseB.action"></div>
+      </div>
+    </div>
+    <div class="bigline" style="margin-top:16px" data-i18n="problem.key"></div>
+  </section>
+
+  <section id="logic" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="logic.title"></div><div class="section-sub" data-i18n="logic.intro"></div></div></div>
+    <div class="flow" id="flow"></div>
+  </section>
+
+  <section id="profiles" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="profiles.title"></div><div class="section-sub" data-i18n="profiles.intro"></div></div></div>
+    <div class="profile-warning" data-i18n="profiles.warning"></div>
+    <div class="profiles" id="profileButtons"></div>
+    <div class="demo" id="profileDemo"></div>
+  </section>
+
+  <section id="safeguards" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="safeguards.title"></div><div class="section-sub" data-i18n="safeguards.intro"></div></div></div>
+    <div id="safeguardGrid" class="grid3"></div>
+    <div class="disclaimer" style="margin-top:12px"><strong data-i18n="safeguards.noncomp"></strong></div>
+  </section>
+
+  <section id="uncertainty" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="uncertainty.title"></div><div class="section-sub" data-i18n="uncertainty.intro"></div></div></div>
+    <div id="uncertaintyList" class="uncertainty-list"></div>
+  </section>
+
+  <section id="resources" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="resources.title"></div><div class="section-sub" data-i18n="resources.intro"></div></div></div>
+    <div id="resourceGrid" class="grid3"></div>
+    <div class="small" style="margin-top:10px" data-i18n="resources.note"></div>
+  </section>
+
+  <section id="review" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="review.title"></div><div class="section-sub" data-i18n="review.intro"></div></div></div>
+    <div id="reviewGrid" class="review-cycle"></div>
+  </section>
+
+  <section id="effectiveness" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="effectiveness.title"></div><div class="section-sub" data-i18n="effectiveness.intro"></div></div></div>
+    <div id="dimensionGrid" class="dimensions"></div>
+    <div class="bigline" style="font-size:17px" data-i18n="effectiveness.note"></div>
+  </section>
+
+  <section id="institutional" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="institutional.title"></div></div></div>
+    <div class="grid2">
+      <div class="card"><h3 data-i18n="institutional.regionalTitle"></h3><p data-i18n="institutional.regionalBody"></p></div>
+      <div class="card"><h3 data-i18n="institutional.boundaryTitle"></h3><p data-i18n="institutional.boundaryBody"></p></div>
+    </div>
+  </section>
+
+  <section id="why" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="why.title"></div></div></div>
+    <div class="grid2">
+      <div class="card"><p data-i18n="why.p1"></p></div>
+      <div class="card"><p data-i18n="why.p2"></p></div>
+    </div>
+  </section>
+
+  <section id="methodology" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="methodology.title"></div><div class="section-sub" data-i18n="methodology.intro"></div></div></div>
+    <div id="methodGrid" class="method-list"></div>
+    <div class="accordion">
+      <details>
+        <summary data-i18n="methodology.detailTitle"></summary>
+        <div class="small" style="margin-top:8px" data-i18n="methodology.detailBody"></div>
+      </details>
+    </div>
+  </section>
+
+  <section id="foundations" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="foundations.title"></div><div class="section-sub" data-i18n="foundations.intro"></div></div></div>
+    <div class="accordion" id="foundationsAccordion"></div>
+  </section>
+
+  <section id="limitations" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="limitations.title"></div><div class="section-sub" data-i18n="limitations.intro"></div></div></div>
+    <div id="limitGrid" class="limit-list"></div>
+  </section>
+
+  <section id="about" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="about.title"></div></div></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Anastasia Korneeva</h3>
+        <p data-i18n="about.bio"></p>
+        <p style="margin-top:10px" data-i18n="about.authorship"></p>
+        <div class="actions">
+          <a id="repoLink" class="action-link primary" href="#" target="_blank" rel="noopener" style="display:none" data-i18n="about.repo"></a>
+          <a class="action-link" href="#citation" data-i18n="about.citeButton"></a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 data-i18n="about.relatedTitle"></h3>
+        <p data-i18n="about.relatedBody"></p>
+        <p style="margin-top:10px" data-i18n="about.manuscript"></p>
+        <p class="small" style="margin-top:10px" data-i18n="about.version"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="citation" class="panel">
+    <div class="section-head"><div><div class="section-title" data-i18n="citation.title"></div><div class="section-sub" data-i18n="citation.intro"></div></div></div>
+    <div class="citation-box">
+      <div id="citationText" class="citation-text"></div>
+      <div class="actions"><button id="copyCitation" class="action-btn" type="button" data-i18n="citation.copy"></button></div>
+    </div>
+  </section>
+
+  <div class="footer" data-i18n="footer"></div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body></html>
