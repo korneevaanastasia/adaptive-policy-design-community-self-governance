@@ -62,7 +62,7 @@ en:{
   "about.manuscript":"A related academic manuscript on adaptive regional support for territorial public self-government is currently in preparation with Elena B. Zyuzina, Voronezh State University.",
   "about.version":"Version 1.1 — 2026",
   "citation.title":"How to cite",
-  "citation.intro":"Suggested citation for the public prototype. Add the repository URL after publication.",
+"citation.intro":"Suggested citation for the public prototype."
   "citation.copy":"Copy citation",
   "footer":"Independent academic research prototype. Public version curated from a larger academic policy-design model."
 },
@@ -129,8 +129,8 @@ ru:{
   "about.manuscript":"Связанная академическая статья об адаптивной региональной поддержке территориального общественного самоуправления в настоящее время готовится совместно с Еленой Б. Зюзиной, Воронежский государственный университет.",
   "about.version":"Версия 1.1 — 2026",
   "citation.title":"Как цитировать",
-  "citation.intro":"Рекомендуемая ссылка на публичный прототип. URL репозитория будет добавлен после публикации.",
-  "citation.copy":"Скопировать ссылку",
+"citation.intro":"Рекомендуемая ссылка на публичный прототип."
+    "citation.copy":"Скопировать ссылку",
   "footer":"Независимый академический исследовательский прототип. Публичная версия подготовлена на основе более подробной академической модели проектирования политики."
 }
 };
@@ -168,7 +168,7 @@ en:{
   ["Stop","The intervention is ineffective, inappropriate, or no longer relevant."]
  ],
  dimensions:["Substantive results","Resource proportionality","Legitimacy & representation","Sustainability","Adaptability","Collective agency"],
- methods:["Literature synthesis","Legal and institutional analysis","Problem decomposition","Theory-of-change logic","Backcasting","Scenario and pathway design","Adaptive decision logic","Explicit treatment of uncertainty","Sensitivity testing of internal normative assumptions"],
+ methods:["Literature synthesis","Legal and institutional analysis","Problem decomposition","Theory-of-change logic","Backcasting","Scenario and pathway design","Adaptive decision logic","Explicit treatment of uncertainty","Sensitivity testing of normative assumptions"],
  limits:[
   "Not an impact evaluation of an existing policy.",
   "Diagnostic configurations are illustrative rather than empirically assigned classifications.",
@@ -211,7 +211,7 @@ ru:{
   ["Прекратить","Мера неэффективна, неуместна или потеряла актуальность."]
  ],
  dimensions:["Содержательная результативность","Ресурсная соразмерность","Легитимность и представительность","Устойчивость","Адаптивность","Коллективная субъектность"],
- methods:["Синтез академической литературы","Правовой и институциональный анализ","Декомпозиция проблемы","Theory of Change","Backcasting","Сценарии и условные траектории","Адаптивная логика решений","Явный учёт неопределённости","Анализ чувствительности внутренних нормативных предпосылок"],
+ methods:["Синтез академической литературы","Правовой и институциональный анализ","Декомпозиция проблемы","Theory of Change","Backcasting","Сценарии и условные траектории","Адаптивная логика решений","Явный учёт неопределённости","Анализ чувствительности нормативных предпосылок"],
  limits:[
   "Не является оценкой воздействия действующей политики.",
   "Диагностические конфигурации иллюстративны и не присваиваются реальным организациям как эмпирическая классификация.",
