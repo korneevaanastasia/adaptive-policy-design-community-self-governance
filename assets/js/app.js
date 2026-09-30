@@ -278,7 +278,8 @@ ru:[
 };
 
 
-const REPOSITORY_URL = ""; // Add the GitHub repository URL after publication.
+const REPOSITORY_URL =
+  "https://github.com/korneevaanastasia/adaptive-policy-design-community-self-governance";
 
 function configureRepositoryLink(){
  const el=document.getElementById("repoLink");
